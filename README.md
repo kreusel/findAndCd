@@ -1,6 +1,11 @@
-#Usage:
+# Usage:
 
-##Add this to your .bashrc
+## Install
+```
+npm install -g https://github.com/MichaelKreusel/findAndCd.git
+```
+
+## Add to your .bashrc
 ```
 p () {
         target=$(find-and-cd $1 ${2-"$HOME/git"});
@@ -11,7 +16,7 @@ p () {
 }
 ```
 
-##Use
+## Use
 ```
 $ p myProjectFolder
 
