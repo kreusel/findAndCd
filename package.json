@@ -1,0 +1,13 @@
+{
+  "name": "find-and-cd",
+  "version": "0.1.0",
+  "description": "A simple directory finder to find the correct project space",
+  "main": "./lib/findAndCd.js",
+  "bin": "./bin/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "echo 'Please add function \"p\" to your .bashrc:' && echo -ne 'p () {\n\ttarget=$(find-and-cd $1 ${2-\"$HOME/git\"});\n\tif [[ ! -z $target ]]; then\n\t\tcd $target;\n\tfi;\n\tunset target\n}'"
+  },
+  "author": "Michael Kreusel <michael@kreusel.info>",
+  "license": "MIT"
+}
