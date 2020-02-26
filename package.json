@@ -9,5 +9,8 @@
     "postinstall": "echo 'Please add function \"p\" to your .bashrc:' && echo -ne 'p () {\n\ttarget=$(find-and-cd $1 ${2-\"$HOME/git\"});\n\tif [[ ! -z $target ]]; then\n\t\tcd $target;\n\tfi;\n\tunset target\n}'"
   },
   "author": "Michael Kreusel <michael@kreusel.info>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "cli-select": "^1.1.2"
+  }
 }
