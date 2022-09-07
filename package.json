@@ -10,7 +10,5 @@
   },
   "author": "Michael Kreusel <michael@kreusel.info>",
   "license": "MIT",
-  "dependencies": {
-    "cli-select": "^1.1.2"
-  }
+  "dependencies": {}
 }
